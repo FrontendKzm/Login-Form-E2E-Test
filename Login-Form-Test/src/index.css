@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 
 body {
@@ -12,12 +11,12 @@ margin: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-border: 2px gray ;
+border: 2px rgba(0, 0, 0, 0.253) ;
 width: 500px;
 height: 500px;
 border-radius: 1.3rem;
-background-color: rgba(161, 161, 161, 0.74);
-box-shadow:10px 5px 3px grey;
+background-color: rgba(161, 161, 161, 0.473);
+box-shadow:10px 5px 3px rgba(201, 200, 200, 0.521);
 font-size: 30px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -34,72 +33,16 @@ font-size: 20px;
 h1 {
   text-align: center;
   font-size: 50px;
+  font-family: "Bodoni Moda SC", serif;
   margin: auto;
   border: none;
   border-radius: 1.3rem;
-  background-color: rgba(0, 0, 0, 0.164);
+  background-color: rgba(0, 0, 0, 0.555);
   margin: auto;
   width: 25%;
-  color: #ffffff;
+  color: #c4c4c4;
 }
 
-=======
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
->>>>>>> 13e29de8b2094ba48cdb335b9979f386c93528f1
 
 @media (prefers-color-scheme: light) {
   :root {
