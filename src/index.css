@@ -1,0 +1,72 @@
+
+
+body {
+  background-image: url(assets/for-backgorund.jpg.jpg) ;
+  background-size: cover;
+  
+}
+
+.log-container{
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px rgba(0, 0, 0, 0.253) ;
+width: 500px;
+height: 500px;
+border-radius: 1.3rem;
+background-color: rgba(161, 161, 161, 0.473);
+box-shadow:10px 5px 3px rgba(201, 200, 200, 0.521);
+font-size: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.inputs{
+width:400px;
+height: 50px;
+font-size: 30px;
+}
+.feedback{
+font-size: 20px;
+background-color: rgba(0, 0, 0, 0.39);  
+}
+
+h1 {
+  text-align: center;
+  font-size: 65px;
+  font-family: "Bodoni Moda SC", serif;
+  margin: auto;
+  border: none;
+  border-radius: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.555);
+  margin: auto;
+  width: 25%;
+  color: #c4c4c4;
+}
+
+.success-log{
+ backdrop-filter: blur(15px);
+ background-color: rgba(255, 208, 0, 0.274);
+ border: 2px rgba(126, 255, 6, 0.37);
+ border-radius: 1.4rem; 
+ width: 25%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 60px;
+ text-align: center;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
