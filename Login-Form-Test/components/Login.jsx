@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Form,FormGroup,Label,Input,Button, FormFeedback } from "reactstrap"
-
+import { useNavigate } from "react-router-dom";
 
 export default function Login(){
 
@@ -15,6 +15,14 @@ const[validEmail,setValidEmail] = useState()
 const[validPassword,setValidPassword] = useState()
 const[ischecked,setIsChecked] = useState();
 
+const navigate = useNavigate();
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+  if (validEmail && validPassword && ischecked) {
+    navigate('/success');
+  }
+};
 
 
 const handleChange =(e)=>{
@@ -42,7 +50,7 @@ useEffect(()=>{
 
    return(
    <div className="log-container">
-   <Form  >
+   <Form onSubmit={handleSubmit} >
     <FormGroup>
       <Label for="exampleEmail">
         Email
@@ -81,7 +89,7 @@ At least 8 characters in length.
 Include a random mixture of letters (uppercase and lowercase), numbers and symbols characters (e.g . / = ! @ # $ % ^ & * ( ) – + ? ).</FormFeedback>) }
     </FormGroup>
     <FormGroup check>
-    <Label for="cbox">I agree the terms of conditions.</Label>
+    <Label for="cbox">I agree to the terms and conditions.</Label>
     <Input
     id="cbox"
     name="ischecked"
